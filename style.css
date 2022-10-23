@@ -306,6 +306,9 @@ header .fa{
   display: none;
 }
 @media only screen and (max-width: 600px){
+  section{
+    max-width: 600px;
+  }
   .circle{
     position: absolute;
     top: 0;
