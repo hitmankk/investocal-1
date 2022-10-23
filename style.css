@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  min-width: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 20px ;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo{
+  position: relative;
+  max-width: 80px;
+  
+}
+
+
+header ul{
+  position: relative;
+  display: flex;
+}
+
+header ul li{
+  list-style: none;
+  color: #fff;
+ 
+  
+}
+
+header ul li a{
+  display: inline-block;
+  color: #fff;
+  font-weight: 900;
+  /* font-size: 1rem; */
+  margin-left: 40px;
+  text-decoration: none;
+  position: relative;
+}
+header ul li a::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+header ul li a:hover::after{
+  color: #fff;
+  font-weight: 900;
+  width: 100%;
+}
+
+/* navbar ending */
+
+.content{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox{
+  position: relative;
+  max-width: 600px;
+  /* margin-top: 25vh; */
+}
+
+.content .textBox h2{
+  color: #333;
+  font-size: 2.7rem;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.content .textBox h2 span{
+  color:#0099ff ;
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+
+.content .textBox p{
+  color: #333;
+  margin-top: 10px;
+  font-size: 1.2tem;
+}
+
+.content .textBox a{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0099ff;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .textBox a:hover{
+  background-color: #2ca913;
+  color: #fff;
+}
+
+.content .imgBox{
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px; 
+  margin-top: 50px;
+}
+
+.content .imgBox img{
+  margin: 20px 0px 110px 0px;
+}
+
+.sci{
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sci li{
+  list-style: none;
+}
+
+.sci li a{
+  display: inline-block;
+  margin: 5px 0px;
+  filter: invert(1);
+  transform: scale(0.9);
+  color: #fff;
+ 
+  
+}
+
+.circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0099ff;
+  clip-path: circle(840px at right 630px );
+}
+
+/* ********** cover page css end *********** */
+
+/* ********* service card start**** */
+
+.sec-icon {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sec-icon::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: -70px;
+  margin-top: -5.5px;
+  top: 60%;
+  background: #333333;
+  width: 50px;
+}
+
+.sec-icon::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  right: -70px;
+  margin-top: -5.5px;
+  top: 60%;
+  background: #333;
+  width: 50px;
+}
+
+.advertisers-service-sec {
+  background-color: #f5f5f5;
+}
+
+.advertisers-service-sec span {
+  color: #0099ff;
+}
+
+.advertisers-service-sec .col {
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+.advertisers-service-sec .service-card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background: #fff;
+}
+
+.advertisers-service-sec .service-card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0dcaf0,#0099ff);
+  position: absolute;
+  left: 0%;
+  top: -98%;
+  z-index: -2;
+  transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+}
+
+.advertisers-service-sec h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 1em 0;
+  z-index: 3;
+}
+
+.advertisers-service-sec p {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  z-index: 3;
+}
+
+.advertisers-service-sec .icon-wrapper {
+  background-color: #2c7bfe;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.advertisers-service-sec .service-card:hover:after {
+  top: 0%;
+}
+
+.service-card .icon-wrapper {
+  background-color: #ffffff;
+  color: #0099ff;
+}
+
+.advertisers-service-sec .service-card:hover .icon-wrapper {
+  color: #0dcaf0;
+}
+
+.advertisers-service-sec .service-card:hover h3 {
+  color: #ffffff;
+}
+
+.advertisers-service-sec .service-card:hover p {
+  color: #f0f0f0;
+}
+
+/* ********* service card end**** */
+
+
+/*  -----------------------------css for small screen---------------------------------------------- */
+header .fa{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+  .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #0099ff;
+    clip-path: circle(1000px at right 1300px, bottom 500px );
+
+  
+  }
+  .content .textBox {
+    position: relative;
+    margin-top: 10vh;
+  
+    font-size: 16px;
+    color: #f0f0f0;
+    max-width: 290px;
+    
+  }
+  .content .textBox h2 span{
+    color: #f0f0f0;
+    left: 40px;
+    text-shadow: 1px 1px 2px rgb(39, 44, 198), 0 0 25px rgb(97, 97, 233), 0 0 5px rgb(45, 148, 232);;
+    
+
+  }
+  .content .textBox h2 {
+    color: white  ;
+  }
+  .content .textBox p{
+    color: #f0f0f0;
+  }
+  .content img{
+    size: 300px;
+    position: absolute;
+    top: 150px;
+    padding: 10px 20px;
+    left: 230px;
+  }
+    /* margin-top: 25vh; */
+
+    header .fa{
+      display: block;
+      font-size: 25px;
+      color: white;
+    }
+    header ul{
+      background: #0099ff;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+  }
+  header ul li{
+    display: block;
+    margin: 25px;
+  }
+  header ul .fa{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    
+      
+  }
+  .imgBox img {
+    width: 450px;
+    left: 300px;
+
+
+  }
+  section{
+    position: relative;
+    width: 100%;
+    min-width: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+  }
+  
+  
+
+  }
+
